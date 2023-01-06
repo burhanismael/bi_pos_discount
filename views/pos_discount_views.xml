@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="bi_pos_discount_inherit_pos_config_view_form" model="ir.ui.view">
+            <field name="name">bi.pos.discount.inherit.pos.config.view.form</field>
+            <field name="model">pos.config</field>
+            <field name="inherit_id" ref="point_of_sale.pos_config_view_form" />
+            <field name="arch" type="xml">
+                <div id="accounting_section" position="after">
+                    <h2>Discount Configuration in POS</h2>
+                    <div class="row mt16 o_settings_container">
+                         <div class="col-12 col-lg-6 o_setting_box">
+                             <div class="o_setting_right_pane">
+                                 <span class="o_form_label">Discount Type</span>
+                                 <field name="discount_type" />
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+            </field>
+        </record>
+
+</odoo>
